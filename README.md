@@ -17,12 +17,12 @@ git clone https://github.com/Anuragreddy-Naredla/face-authenticator.git
 
 ### Step 2-: Creat conda environment
 ```
-conda create -p ./env python=3.8.13 -y
+conda create -p ./venv python=3.8.13 -y
 ```
 
 ### Step 3-: Activate Conda environment
 ```
-conda activate ./env
+conda activate ./venv
 ```
 
 ### Step 4-: Install requirements
@@ -43,9 +43,15 @@ set DATABASE_NAME=<DATABASE_NAME>
 set USER_COLLECTION_NAME=<USER_COLLECTION_NAME>
 
 set EMBEDDING_COLLECTION_NAME=<EMBEDDING_COLLECTION_NAME>
-
-For Linux,
-use "export"
+```
+### .env file
+```
+SECRET_KEY=KlgH6AzYDeZeGwD288to79I3vTHT8wp7
+ALGORITHM=HS256
+DATABASE_NAME='UserDatabase'
+USER_COLLECTION_NAME='User'
+EMBEDDING_COLLECTION_NAME='Embedding'
+MONGODB_URL_KEY=
 ```
 
 ### Step 6-: Run the application server
